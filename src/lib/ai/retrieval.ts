@@ -91,7 +91,14 @@ if (process.env.GOOGLE_API_KEY) {
   startIndexBuild();
 }
 
-const SIMILARITY_THRESHOLD = 0.35;
+// Minimum absolute cosine similarity to be considered relevant.
+// text-embedding-004 typically scores 0.75+ for highly related content;
+// 0.60 cuts out tangential/weak matches while keeping strong hits.
+const SIMILARITY_THRESHOLD = 0.60;
+// A result is kept only if its score is within this fraction of the top score.
+// e.g. 0.85 means: if the best hit is 0.80, only keep results >= 0.68.
+// This drops weak runners-up when the top hit is clearly stronger.
+const RELATIVE_THRESHOLD = 0.85;
 // How long to wait for an in-progress index build before falling back to keyword search.
 const INDEX_WAIT_MS = 5_000;
 
@@ -121,10 +128,17 @@ async function semanticRetrieve(query: string, k: number): Promise<RetrievedDoc[
     if (!existing || item.score > existing.score) best.set(item.entry.url, item);
   }
 
-  return [...best.values()]
+  const candidates = [...best.values()]
     .filter((s) => s.score >= SIMILARITY_THRESHOLD)
     .sort((a, b) => b.score - a.score)
-    .slice(0, k)
+    .slice(0, k);
+
+  if (candidates.length === 0) return [];
+
+  // Drop results that fall too far below the best hit (relative gap filter)
+  const topScore = candidates[0].score;
+  return candidates
+    .filter((s) => s.score >= topScore * RELATIVE_THRESHOLD)
     .map((s, i) => ({
       index: i + 1,
       content: s.entry.doc.pageContent,
@@ -202,15 +216,18 @@ function keywordRetrieve(query: string, k: number): RetrievedDoc[] {
   const qTokens = new Set(tokenize(query));
   if (qTokens.size === 0) return [];
 
+  // Require at least 40 % of query tokens to match — avoids single-word coincidences
+  const MIN_COVERAGE = Math.max(1, Math.ceil(qTokens.size * 0.4));
+
   const scored = keywordCorpus
     .map((entry) => {
-      const docTokens = tokenize(`${entry.title} ${entry.snippet}`);
-      let score = 0;
-      for (const t of docTokens) if (qTokens.has(t)) score += 1;
-      for (const t of tokenize(entry.title)) if (qTokens.has(t)) score += 0.5;
-      return { entry, score };
+      const docTokens = new Set(tokenize(`${entry.title} ${entry.snippet}`));
+      let hits = 0;
+      for (const t of qTokens) if (docTokens.has(t)) hits++;
+      const score = hits + (tokenize(entry.title).filter((t) => qTokens.has(t)).length * 0.5);
+      return { entry, score, hits };
     })
-    .filter((s) => s.score > 0);
+    .filter((s) => s.hits >= MIN_COVERAGE);
 
   // Deduplicate by URL — keep only the best-scoring snippet per resource
   const best = new Map<string, typeof scored[0]>();
