@@ -12,3 +12,5 @@ contributions.xlsx
 .claude/
 
 .vercel
+
+tsconfig.tsbuildinfo
