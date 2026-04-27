@@ -5,10 +5,7 @@ export default defineConfig({
   test: {
     environment: "node",
     globals: true,
-    pool: "threads",
-    poolOptions: {
-      threads: { singleThread: true },
-    },
+
   },
   resolve: {
     alias: {
