@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+  <!-- Index finger -->
+  <path d="M9 2 C8.4 2 7 2.6 7 4.5 L7 12"/>
+  <!-- Middle finger -->
+  <path d="M13 1.5 C12.4 1.5 11 2.1 11 4 L11 12"/>
+  <!-- Ring finger curled -->
+  <path d="M17 6 C16.4 5.4 15 5.6 15 7.5 L15 13"/>
+  <!-- Fist base -->
+  <path d="M7 12 C7 12 5 12 5 14 L5 17 C5 19.8 7.2 22 10 22 L14 22 C16.8 22 19 19.8 19 17 L19 9.5 C19 8.1 17.9 7 16.5 7 C15.7 7 15 7.4 15 7.4"/>
+  <!-- Connect fingers to fist -->
+  <path d="M7 12 L15 12"/>
+  <!-- Pinky curled against palm -->
+  <path d="M19 11.5 C19 11.5 20.5 11 21 12.5"/>
+</svg>

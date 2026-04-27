@@ -1,0 +1,660 @@
+[
+  {
+    "id": "khalidi-100yrs",
+    "title": "The Hundred Years' War on Palestine",
+    "author": "Rashid Khalidi",
+    "year": 2020,
+    "type": "book",
+    "url": "https://www.metropolitanbooks.com/9781250787651/the-hundred-years-war-on-palestine/",
+    "tags": ["history", "politics", "20th-century"],
+    "summary": "A documented history of settler colonialism, resistance, and the international politics shaping Palestine over a century.",
+    "verified": true,
+    "snippets": [
+      "Khalidi reframes the conflict as a settler-colonial war waged in stages from the Balfour Declaration onward, structured around six declarations of war.",
+      "The work draws extensively on private family archives, British and American diplomatic records, and Palestinian political correspondence.",
+      "Khalidi argues that six pivotal declarations of war — from the 1917 Balfour Declaration to the 2006 siege of Gaza — mark the stages of a systematic colonial project against Palestine."
+    ]
+  },
+  {
+    "id": "said-question",
+    "title": "The Question of Palestine",
+    "author": "Edward W. Said",
+    "year": 1979,
+    "type": "book",
+    "url": "https://www.penguinrandomhouse.com/books/24180/the-question-of-palestine-by-edward-w-said/",
+    "tags": ["history", "politics", "literature"],
+    "summary": "Said's foundational essay on Palestinian identity, dispossession, and the failure of Western political imagination.",
+    "verified": true,
+    "snippets": [
+      "Said argues that Palestinian self-determination has been systematically denied through the discursive framing of the 'native' as politically illegible.",
+      "The book traces how Zionism's self-presentation in the West obscured the existing Palestinian society it displaced.",
+      "Said contends that the Palestinian people constitute a genuine national community with deep ties to the land, ties that have been systematically erased from Western political discourse."
+    ]
+  },
+  {
+    "id": "pappe-cleansing",
+    "title": "The Ethnic Cleansing of Palestine",
+    "author": "Ilan Pappé",
+    "year": 2006,
+    "type": "book",
+    "url": "https://www.simonandschuster.com/books/The-Ethnic-Cleansing-of-Palestine/Ilan-Pappe/9781851685554",
+    "tags": ["history", "1948", "nakba"],
+    "summary": "Israeli historian Pappé documents Plan Dalet and the systematic depopulation of more than 500 Palestinian villages in 1948.",
+    "verified": true,
+    "snippets": [
+      "Pappé locates the operational blueprint of 1948 in Plan Dalet, dated March 10, 1948, which authorized the expulsion of Palestinian villagers.",
+      "By the end of 1948, more than 750,000 Palestinians had been displaced and at least 531 villages depopulated.",
+      "Using Israeli military archives declassified in the 1980s, Pappé demonstrates that the depopulation of Palestinian villages was a deliberate, planned strategy — not a byproduct of war."
+    ]
+  },
+  {
+    "id": "palquest",
+    "title": "Palquest — Interactive Encyclopedia of the Palestine Question",
+    "author": "Institute for Palestine Studies",
+    "year": 2016,
+    "type": "website",
+    "url": "https://www.palquest.org/",
+    "tags": ["history", "encyclopedia", "primary-sources"],
+    "summary": "Multilingual archive of Palestinian history, biographies, oral testimonies, photographs, and document scans.",
+    "verified": true,
+    "snippets": [
+      "Palquest aggregates primary documents, biographical entries, and curated themes spanning the late Ottoman period to the present.",
+      "The encyclopedia includes over 2,000 substantive entries, 200 biographies by leading academics, 500 historical documents, and 400 entries on villages depopulated in 1948."
+    ]
+  },
+  {
+    "id": "moc-books",
+    "title": "Palestinian Ministry of Culture — Books",
+    "author": "State of Palestine, Ministry of Culture",
+    "year": 2024,
+    "type": "archive",
+    "url": "https://moc.pna.ps/listBooks.php",
+    "tags": ["literature", "culture", "official"],
+    "summary": "Official catalog of Palestinian literary and cultural publications maintained by the Ministry of Culture.",
+    "verified": true,
+    "snippets": [
+      "The Ministry of Culture maintains a public listing of Palestinian publications across literature, history, and the arts.",
+      "Palestinian cultural production has persisted through decades of occupation, with the Ministry supporting poets, novelists, and visual artists documenting life under colonial conditions."
+    ]
+  },
+  {
+    "id": "wiki-nakba",
+    "title": "Nakba — Wikipedia",
+    "author": "Wikipedia contributors",
+    "year": 2025,
+    "type": "article",
+    "url": "https://en.wikipedia.org/wiki/Nakba",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Haifa_1948_expulsion.jpg/330px-Haifa_1948_expulsion.jpg",
+    "tags": ["history", "1948", "reference"],
+    "summary": "Reference overview of the 1948 Palestinian Nakba with sourced citations.",
+    "verified": false,
+    "snippets": [
+      "The Nakba refers to the destruction of Palestinian society and homeland in 1948, including the expulsion and flight of around 750,000 Palestinians.",
+      "During and after the 1948 Arab-Israeli War, approximately 400–600 Palestinian villages were destroyed or depopulated, with property confiscated under Israeli Absentee Property Law.",
+      "النكبة الفلسطينية عام 1948 أسفرت عن تهجير أكثر من 750,000 فلسطيني وتدمير أكثر من 500 قرية فلسطينية خلال الحرب التي أعقبت إعلان قيام دولة إسرائيل.",
+      "خلال النكبة وبعدها، صادرت إسرائيل أملاك الفلسطينيين المهجَّرين بموجب قانون أملاك الغائبين، ورفضت تطبيق قرار الأمم المتحدة 194 القاضي بحق العودة."
+    ]
+  },
+  {
+    "id": "wiki-palestinian-cuisine",
+    "title": "Palestinian cuisine — Wikipedia",
+    "author": "Wikipedia contributors",
+    "year": 2025,
+    "type": "article",
+    "url": "https://en.wikipedia.org/wiki/Palestinian_cuisine",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Palestinianbreakfastfalafel.jpg/330px-Palestinianbreakfastfalafel.jpg",
+    "tags": ["culture", "food"],
+    "summary": "Overview of staples, regional variation, and signature dishes of Palestinian cuisine.",
+    "verified": false,
+    "snippets": [
+      "Staples include olive oil, za'atar, freekeh, lamb, and seasonal vegetables; signature dishes include musakhan, maqluba, and knafeh.",
+      "Musakhan — roasted chicken layered over taboon bread with caramelized onions, sumac, and pine nuts — is considered the national dish and is closely tied to the olive harvest season.",
+      "Palestinian culinary traditions are deeply rooted in the agricultural landscape; the olive tree, cultivated for millennia, is central to identity, cuisine, and livelihood.",
+      "المطبخ الفلسطيني غني بالنكهات الأصيلة؛ من أبرز أطباقه المسخن بالدجاج المحمّر مع البصل المكرمل والسماق، والمقلوبة، والكنافة النابلسية.",
+      "زيت الزيتون والزعتر والفريكة من أساسيات المطبخ الفلسطيني، وترتبط هذه المكوّنات ارتباطًا وثيقًا بهوية الفلسطيني وتراثه الزراعي الممتد لآلاف السنين."
+    ]
+  },
+  {
+    "id": "naji-al-ali",
+    "title": "Naji al-Ali — Wikipedia",
+    "author": "Wikipedia contributors",
+    "year": 2025,
+    "type": "article",
+    "url": "https://en.wikipedia.org/wiki/Naji_al-Ali",
+    "image": "https://upload.wikimedia.org/wikipedia/en/d/db/Naji_Photo.jpg",
+    "tags": ["culture", "biography", "art"],
+    "summary": "Biography of the Palestinian cartoonist who created the iconic figure of Handala.",
+    "verified": false,
+    "snippets": [
+      "Naji al-Ali (1937–1987) was a Palestinian cartoonist whose recurring character Handala — a barefoot, ten-year-old refugee with his back turned — became a symbol of Palestinian identity and resistance.",
+      "Al-Ali was assassinated in London on July 22, 1987; his killer was never conclusively identified, though Palestinian and Lebanese intelligence operatives were suspected.",
+      "Handala first appeared in 1969, representing al-Ali at age ten when he was expelled from his village of al-Shajara during the 1948 Nakba — the age he vowed he would remain until he could return to Palestine.",
+      "ناجي العلي (1937–1987) رسام كاريكاتير فلسطيني ابتكر شخصية حنظلة، الطفل الحافي الذي يولّي ظهره للعالم، فأصبحت رمزًا خالدًا للهوية الفلسطينية والمقاومة.",
+      "اغتيل ناجي العلي في لندن عام 1987، وظلّ الكشف عن هوية قاتله محلّ جدل؛ أما حنظلة فقد وُلد عام 1969 تعبيرًا عن طفولة العلي حين هُجِّر من قريته الشجرة في نكبة 1948."
+    ]
+  },
+  {
+    "id": "ajplus-nakba-doc",
+    "title": "How did the Nakba happen? — Al Jazeera English",
+    "author": "Al Jazeera English",
+    "year": 2023,
+    "type": "video",
+    "url": "https://www.youtube.com/watch?v=megzzpTWajg",
+    "video": "https://www.youtube.com/watch?v=megzzpTWajg",
+    "tags": ["history", "1948", "nakba", "video"],
+    "summary": "Al Jazeera English explainer on the 1948 Palestinian Nakba, its causes, and its lasting consequences.",
+    "verified": true,
+    "snippets": [
+      "The 1948 Nakba — meaning 'catastrophe' in Arabic — resulted in the displacement of over 700,000 Palestinians from their homes as the state of Israel was established.",
+      "More than 500 Palestinian villages were depopulated, many destroyed, as part of the military campaign surrounding Israel's founding."
+    ]
+  },
+
+  {
+    "id": "kramer-history-palestine",
+    "title": "A History of Palestine: From the Ottoman Conquest to the Founding of the State of Israel",
+    "author": "Gudrun Krämer",
+    "year": 2008,
+    "type": "book",
+    "url": "https://press.princeton.edu/books/paperback/9780691150079/a-history-of-palestine",
+    "tags": ["history", "Ottoman", "British Mandate", "1948"],
+    "summary": "Comprehensive scholarly account of Palestine from Ottoman rule through the British Mandate and the founding of Israel in 1948.",
+    "verified": true,
+    "snippets": [
+      "Krämer traces Palestine's transformation from an Ottoman province shaped by competing religious and ethnic communities into the site of one of the twentieth century's most intractable conflicts.",
+      "The British Mandate (1920–1948) deepened Palestinian dispossession by facilitating mass Jewish immigration while suppressing the 1936–1939 Arab Revolt — the largest anti-colonial uprising in Palestinian history.",
+      "By 1947 the Jewish population of Palestine had grown from roughly 60,000 in 1918 to over 600,000, fundamentally altering the demographic and political landscape."
+    ]
+  },
+  {
+    "id": "khalidi-palestinian-identity",
+    "title": "Palestinian Identity: The Construction of Modern National Consciousness",
+    "author": "Rashid Khalidi",
+    "year": 1997,
+    "type": "book",
+    "url": "https://cup.columbia.edu/book/palestinian-identity/9780231150743/",
+    "tags": ["identity", "nationalism", "history", "culture"],
+    "summary": "Scholarly examination of how Palestinian national identity was constructed across the Ottoman, Mandate, and modern periods.",
+    "verified": true,
+    "snippets": [
+      "Khalidi shows that Palestinian national consciousness emerged before the British Mandate — in Ottoman-era newspapers, schools, and religious institutions — countering the claim that Palestinian identity is a modern political invention.",
+      "Jerusalem's role as a religious, cultural, and administrative centre meant that Palestinians across the region oriented their sense of identity around the city long before the conflict with Zionism intensified.",
+      "The Nakba did not dissolve Palestinian identity; rather, displacement and exile sharpened national consciousness and gave it new political urgency in refugee camps and diaspora communities."
+    ]
+  },
+  {
+    "id": "abulhawa-mornings-jenin",
+    "title": "Mornings in Jenin",
+    "author": "Susan Abulhawa",
+    "year": 2010,
+    "type": "book",
+    "url": "https://www.bloomsbury.com/us/mornings-in-jenin-9781408809488/",
+    "tags": ["fiction", "refugee", "1948", "diaspora", "family"],
+    "summary": "Novel tracing four generations of a Palestinian family from their village in Haifa through displacement, refugee camps in Jenin, and diaspora.",
+    "verified": true,
+    "snippets": [
+      "The novel follows the Abulheja family from the fertile village of Ein Hod near Haifa, expelled in 1948 and consigned to the Jenin refugee camp in the West Bank.",
+      "Abulhawa weaves personal tragedy — infant abduction, occupation, the 1982 Sabra and Shatila massacre — into a multigenerational portrait of Palestinian resilience and loss.",
+      "Translated into more than thirty languages, Mornings in Jenin became one of the most widely read Palestinian novels internationally, introducing many readers to the human dimension of the Nakba."
+    ]
+  },
+  {
+    "id": "kanafani-men-sun",
+    "title": "Men in the Sun and Other Palestinian Stories",
+    "author": "Ghassan Kanafani",
+    "year": 1963,
+    "type": "book",
+    "url": "https://www.versobooks.com/products/3345-men-in-the-sun",
+    "tags": ["fiction", "refugees", "political-allegory", "classic", "literature"],
+    "summary": "Classic Palestinian novella in which three refugees attempt to smuggle themselves to Kuwait hidden inside a water tanker, dying in the desert heat.",
+    "verified": true,
+    "snippets": [
+      "Three Palestinian men of different generations pay a driver to smuggle them across the desert to Kuwait in the hollow tank of a water truck; they die when the driver is delayed at a border checkpoint.",
+      "The novella's devastating final question — 'Why didn't you knock on the walls of the tank?' — has been read as Kanafani's rebuke of Palestinian political passivity in the face of slow erasure.",
+      "Ghassan Kanafani (1936–1972), one of the most important Palestinian writers of the twentieth century, was assassinated by a car bomb in Beirut at age 36; his work remains central to Palestinian literary identity."
+    ]
+  },
+  {
+    "id": "darwish-memory-forgetfulness",
+    "title": "Memory for Forgetfulness: August, Beirut, 1982",
+    "author": "Mahmoud Darwish",
+    "year": 1987,
+    "type": "book",
+    "url": "https://www.ucpress.edu/books/memory-for-forgetfulness/paper",
+    "tags": ["poetry", "Beirut", "1982", "memoir", "resistance"],
+    "summary": "Prose poem and memoir by Palestine's most celebrated poet, recording a single morning during the 1982 Israeli siege of Beirut.",
+    "verified": true,
+    "snippets": [
+      "Darwish structures the book around a single morning — August 6, 1982 — during the Israeli siege of Beirut, weaving memory, political analysis, and lyric meditation into a unified prose work.",
+      "The work mourns the PLO's forced departure from Lebanon following the siege, an event Darwish experienced as a second exile: 'We have no address, and we lost our addresses.'",
+      "Mahmoud Darwish (1941–2008), born in the village of al-Birwa in the Galilee, became Palestine's most internationally recognized poet; his verse identity card — 'Write down: I am an Arab' — is among the most quoted poems in Arabic literature."
+    ]
+  },
+  {
+    "id": "said-after-last-sky",
+    "title": "After the Last Sky: Palestinian Lives",
+    "author": "Edward W. Said",
+    "year": 1986,
+    "type": "book",
+    "url": "https://cup.columbia.edu/book/after-the-last-sky/9780231114493/",
+    "tags": ["photography", "identity", "diaspora", "memoir", "culture"],
+    "summary": "Said's personal essay on Palestinian life accompanied by Jean Mohr's photographs — an intimate portrait of dispersal, memory, and survival.",
+    "verified": true,
+    "snippets": [
+      "Said combines lyric essay, autobiography, and social analysis with Jean Mohr's photographs of Palestinians in Lebanon, the West Bank, and diaspora communities, producing a fragmented form that mirrors Palestinian fragmentation itself.",
+      "The book's title comes from Mahmoud Darwish: 'Where should we go after the last frontiers? Where should the birds fly after the last sky?' — a question Said treats as the defining condition of Palestinian existence.",
+      "Said describes Palestinian identity as constituted by displacement: 'We are always out of place. Yet we do not lack for places.'"
+    ]
+  },
+  {
+    "id": "masalha-expulsion",
+    "title": "The Expulsion of the Palestinians: The Concept of 'Transfer' in Zionist Political Thought, 1882–1948",
+    "author": "Nur Masalha",
+    "year": 1992,
+    "type": "book",
+    "url": "https://www.cambridge.org/core/books/expulsion-of-the-palestinians/",
+    "tags": ["history", "transfer", "Zionism", "1948", "population removal"],
+    "summary": "Documents how the concept of transferring the Palestinian Arab population was central to Zionist political thinking from the movement's earliest years.",
+    "verified": true,
+    "snippets": [
+      "Masalha draws on Zionist sources including diaries, internal correspondence, and congress records to show that 'transfer' — the removal of Palestinian Arabs — was discussed as a policy goal from the late nineteenth century onward.",
+      "Theodor Herzl's diary entry of June 12, 1895 describes the need to 'spirit the penniless population across the border' — evidence Masalha places within a longer tradition of explicitly eliminatory thinking.",
+      "By 1948, the concept of transfer had moved from political discourse into military operations, culminating in the expulsion of over 750,000 Palestinians."
+    ]
+  },
+  {
+    "id": "aljazeera-al-nakba-doc",
+    "title": "Al-Nakba: The Palestinian Catastrophe — Al Jazeera English (4-part documentary)",
+    "author": "Al Jazeera English",
+    "year": 2008,
+    "type": "video",
+    "url": "https://www.youtube.com/watch?v=H7FML0wzJ6A",
+    "video": "https://www.youtube.com/watch?v=H7FML0wzJ6A",
+    "tags": ["nakba", "1948", "documentary", "history", "expulsion"],
+    "summary": "Four-part Al Jazeera documentary series tracing the events of 1948 through Israeli military archives, survivor testimony, and scholarly analysis.",
+    "verified": true,
+    "snippets": [
+      "The documentary draws on declassified Israeli military archives, eyewitness accounts from Palestinian survivors, and interviews with historians including Ilan Pappé and Walid Khalidi.",
+      "Episodes cover the partition plan, the military operations that drove Palestinians from their villages, the international community's failure to enforce refugee return, and the lasting consequences of 1948.",
+      "Survivors describe being ordered from their homes at gunpoint, watching their villages demolished, and spending decades in refugee camps denied the right of return guaranteed by UN Resolution 194."
+    ]
+  },
+  {
+    "id": "five-broken-cameras",
+    "title": "5 Broken Cameras",
+    "author": "Emad Burnat and Guy Davidi",
+    "year": 2011,
+    "type": "video",
+    "url": "https://www.kino.com/film/5-broken-cameras/",
+    "tags": ["documentary", "resistance", "Bil'in", "occupation", "non-violence", "filmmaking"],
+    "summary": "Academy Award-nominated documentary filmed by Palestinian farmer Emad Burnat over five years in the village of Bil'in, recording non-violent resistance to the separation wall.",
+    "verified": true,
+    "snippets": [
+      "Burnat bought his first camera to document the birth of his son; it was the first of five cameras destroyed while filming weekly protests against the Israeli separation wall cutting through Bil'in's agricultural land.",
+      "The film records the killing of Burnat's close friend Bassem Abu Rahma by a high-velocity tear gas canister fired at close range during a non-violent demonstration in 2009.",
+      "Nominated for the Academy Award for Best Documentary Feature in 2013, the film became one of the most internationally recognized works of Palestinian cinema."
+    ]
+  },
+  {
+    "id": "dw-forgotten-nakba",
+    "title": "The Forgotten Nakba: Palestinians Expelled from Kuwait After the Gulf War",
+    "author": "Deutsche Welle (DW)",
+    "year": 2021,
+    "type": "video",
+    "url": "https://www.youtube.com/watch?v=DHioCDjG--I",
+    "video": "https://www.youtube.com/watch?v=DHioCDjG--I",
+    "tags": ["diaspora", "Kuwait", "Gulf War", "1991", "expulsion", "documentary"],
+    "summary": "DW documentary on the expulsion of over 400,000 Palestinians from Kuwait in 1991, a largely forgotten displacement crisis.",
+    "verified": true,
+    "snippets": [
+      "Following the 1991 Gulf War, Kuwait expelled between 300,000 and 400,000 Palestinians — a community that had lived and worked in the country for decades — as collective punishment for the PLO's political support of Saddam Hussein.",
+      "The expulsion reduced the Palestinian population in Kuwait from approximately 450,000 before the Iraqi invasion to fewer than 30,000 by 1992, devastating families and destroying accumulated generational wealth.",
+      "The Kuwait expulsion remains largely absent from international accounts of Palestinian displacement, overshadowed by the 1948 Nakba and the 1967 occupation."
+    ]
+  },
+  {
+    "id": "amnesty-genocide-2024",
+    "title": "'You Feel Like You Are Subhuman': Israel's Genocide Against Palestinians in Gaza",
+    "author": "Amnesty International",
+    "year": 2024,
+    "type": "report",
+    "url": "https://www.amnesty.org/en/latest/news/2024/12/amnesty-international-concludes-israel-is-committing-genocide-against-palestinians-in-gaza/",
+    "tags": ["genocide", "Gaza", "human rights", "international law", "2024"],
+    "summary": "300-page Amnesty International report documenting evidence of genocide against Palestinians in Gaza from October 2023 onwards.",
+    "verified": true,
+    "snippets": [
+      "Amnesty's 296-page investigation documents killings of civilians, deliberate destruction of civilian infrastructure, forcible displacement, and sustained obstruction of humanitarian aid as evidence of genocidal intent.",
+      "The report finds that Israeli officials made statements expressing genocidal intent, including references to Gaza as 'human animals', and that military actions were consistent with those statements.",
+      "Amnesty concludes that Israel has committed and continues to commit genocide against Palestinians in Gaza, calling on states to suspend arms transfers and support ICC accountability mechanisms."
+    ]
+  },
+  {
+    "id": "hrw-water-2024",
+    "title": "Extermination and Acts of Genocide: Israel Deliberately Depriving Palestinians in Gaza of Water",
+    "author": "Human Rights Watch",
+    "year": 2024,
+    "type": "report",
+    "url": "https://www.hrw.org/report/2024/12/19/extermination-and-acts-genocide/israel-deliberately-depriving-palestinians-gaza",
+    "tags": ["genocide", "water", "Gaza", "war crimes", "humanitarian law"],
+    "summary": "Human Rights Watch report documenting Israel's deliberate restriction of water access as an act of genocide against Palestinian civilians in Gaza.",
+    "verified": true,
+    "snippets": [
+      "HRW documents that Israeli forces deliberately destroyed water infrastructure including desalination plants, pipelines, and wells, depriving Gaza's 2.3 million residents of safe water.",
+      "The report finds that water deprivation caused preventable deaths, the spread of water-borne disease, and severe malnutrition — particularly among children — and constitutes an act of genocide under international law.",
+      "Israeli authorities blocked or delayed entry of water purification equipment and fuel needed to run pumping systems, despite international calls for unimpeded humanitarian access."
+    ]
+  },
+  {
+    "id": "icj-wall-2004",
+    "title": "Legal Consequences of the Construction of a Wall in the Occupied Palestinian Territory — ICJ Advisory Opinion",
+    "author": "International Court of Justice",
+    "year": 2004,
+    "type": "report",
+    "url": "https://www.icj-cij.org/case/131",
+    "tags": ["international law", "separation wall", "occupation", "ICJ", "legal ruling"],
+    "summary": "International Court of Justice advisory opinion ruling that the Israeli separation wall and associated settlements violate international law.",
+    "verified": true,
+    "snippets": [
+      "The ICJ ruled in July 2004 that the construction of the separation wall within the Occupied Palestinian Territory violates international humanitarian law and human rights law, and that Israel is obligated to dismantle the sections built inside the West Bank.",
+      "The Court found that Israeli settlements in the West Bank and East Jerusalem contravene Article 49(6) of the Fourth Geneva Convention, which prohibits the transfer of civilian population into occupied territory.",
+      "The advisory opinion concluded that all states are under an obligation not to recognize the illegal situation created by the wall and not to render aid or assistance in maintaining that situation."
+    ]
+  },
+  {
+    "id": "icj-occupation-2024",
+    "title": "Legal Consequences Arising from the Policies and Practices of Israel in the Occupied Palestinian Territory — ICJ Advisory Opinion",
+    "author": "International Court of Justice",
+    "year": 2024,
+    "type": "report",
+    "url": "https://www.icj-cij.org/case/163",
+    "tags": ["international law", "occupation", "apartheid", "annexation", "ICJ", "2024"],
+    "summary": "2024 ICJ advisory opinion ruling that Israel's prolonged occupation, annexation, and settlement policies are unlawful under international law.",
+    "verified": true,
+    "snippets": [
+      "The ICJ ruled in July 2024 that Israel's continued presence in the Occupied Palestinian Territory is unlawful and that it must end as rapidly as possible.",
+      "The Court found that Israel's policies of annexation, settlement expansion, and exploitation of natural resources amount to illegal de facto annexation of significant parts of the West Bank and East Jerusalem.",
+      "The opinion obliges all states and the UN to refrain from recognizing Israeli sovereignty over occupied territory and to take steps to bring the occupation to an end."
+    ]
+  },
+  {
+    "id": "btselem",
+    "title": "B'Tselem — The Israeli Information Center for Human Rights in the Occupied Territories",
+    "author": "B'Tselem",
+    "year": 1989,
+    "type": "website",
+    "url": "https://www.btselem.org/",
+    "tags": ["human rights", "documentation", "occupied territories", "settlements", "checkpoints"],
+    "summary": "Israeli human rights organization that has documented violations of Palestinian rights in the West Bank and Gaza since 1989.",
+    "verified": true,
+    "snippets": [
+      "B'Tselem's database documents more than 10,000 Palestinian fatalities in the occupied territories since 2000, with detailed records of each incident including location, circumstance, and victim identity.",
+      "B'Tselem research shows that over 700,000 Israeli settlers now live in more than 250 settlements across the West Bank — settlements the organization, the UN, and the ICJ consider illegal under international law.",
+      "In 2021, B'Tselem published a landmark report classifying Israel's control over Palestinians in all territories it controls as a single apartheid regime, a conclusion subsequently endorsed by Human Rights Watch and Amnesty International."
+    ]
+  },
+  {
+    "id": "alhaq",
+    "title": "Al-Haq — Law in the Service of Man",
+    "author": "Al-Haq",
+    "year": 1979,
+    "type": "website",
+    "url": "https://www.alhaq.org/",
+    "tags": ["human rights", "legal advocacy", "international law", "Palestine", "documentation"],
+    "summary": "Palestine's oldest human rights organization, founded in Ramallah in 1979, documenting violations and advocating for accountability.",
+    "verified": true,
+    "snippets": [
+      "Al-Haq has held consultative status with the UN Economic and Social Council since 2000 and has submitted evidence to UN bodies, the ICC, and international courts on Israeli violations of Palestinian rights.",
+      "The organization documents violations including extrajudicial killings, administrative detention, collective punishment, settlement construction, and the destruction of Palestinian agricultural land and water sources.",
+      "Al-Haq's legal analysis has contributed to foundational international determinations, including findings on the unlawfulness of the separation wall (ICJ 2004) and the characterization of Israeli practices as apartheid."
+    ]
+  },
+  {
+    "id": "unrwa",
+    "title": "UNRWA — United Nations Relief and Works Agency for Palestine Refugees",
+    "author": "United Nations",
+    "year": 1949,
+    "type": "website",
+    "url": "https://www.unrwa.org/",
+    "tags": ["refugees", "humanitarian", "education", "health", "UN"],
+    "summary": "UN agency providing humanitarian services to 5.9 million Palestine refugees in Jordan, Lebanon, Syria, the West Bank, and Gaza.",
+    "verified": true,
+    "snippets": [
+      "UNRWA was established in 1949 to provide emergency relief to the 750,000 Palestinians expelled or displaced in 1948; it now serves 5.9 million registered Palestine refugees across five fields of operation.",
+      "UNRWA operates 700 schools educating over 500,000 Palestinian children, making it the largest provider of education for Palestinian refugees and one of the largest school networks in the Middle East.",
+      "Palestine refugees — defined as persons whose normal place of residence was Palestine during 1 June 1946 to 15 May 1948, and who lost both home and livelihood as a result of the 1948 conflict — pass refugee status to their descendants."
+    ]
+  },
+  {
+    "id": "addameer",
+    "title": "Addameer — Prisoner Support and Human Rights Association",
+    "author": "Addameer",
+    "year": 1992,
+    "type": "website",
+    "url": "https://www.addameer.org/",
+    "tags": ["prisoners", "administrative detention", "torture", "human rights", "occupied territories"],
+    "summary": "Palestinian prisoner rights organization documenting detention conditions and providing legal support to Palestinian political prisoners.",
+    "verified": true,
+    "snippets": [
+      "Since 1967, Israel has detained over 800,000 Palestinians — roughly 40% of the male Palestinian population in the occupied territories — under a military legal system that allows detention without charge or trial.",
+      "Administrative detention, used extensively against Palestinians, allows imprisonment for renewable six-month periods without charge, without trial, and without the right to see the evidence against the detainee.",
+      "As of 2024, Israel held approximately 9,900 Palestinian political prisoners, including over 3,400 under administrative detention — a figure that rose sharply following the October 2023 escalation."
+    ]
+  },
+  {
+    "id": "un-rapporteur-apartheid-2022",
+    "title": "Situation of Human Rights in the Palestinian Territory Occupied Since 1967 — UN Special Rapporteur Report",
+    "author": "Francesca Albanese, UN Special Rapporteur",
+    "year": 2022,
+    "type": "report",
+    "url": "https://www.ohchr.org/en/documents/thematic-reports/a77356-situation-human-rights-palestinian-territory-occupied-1967",
+    "tags": ["apartheid", "occupation", "international law", "UN", "human rights"],
+    "summary": "UN Special Rapporteur report concluding that Israel's occupation constitutes apartheid under international law.",
+    "verified": true,
+    "snippets": [
+      "Special Rapporteur Francesca Albanese concludes that Israel's policies and practices across all territories it controls — including Israel proper, the West Bank, East Jerusalem, and Gaza — amount to a system of apartheid.",
+      "The report identifies three pillars of apartheid: the intention to maintain Jewish demographic dominance, systematic dispossession of Palestinian land and property, and a fragmented system of laws denying Palestinians equal rights.",
+      "The apartheid determination has since been endorsed by Amnesty International (2022), Human Rights Watch (2021), and B'Tselem (2021), representing a significant convergence in the human rights community's legal analysis."
+    ]
+  },
+  {
+    "id": "wiki-mahmoud-darwish",
+    "title": "Mahmoud Darwish — Wikipedia",
+    "author": "Wikipedia contributors",
+    "year": 2025,
+    "type": "article",
+    "url": "https://en.wikipedia.org/wiki/Mahmoud_Darwish",
+    "tags": ["poetry", "biography", "resistance", "culture", "literature"],
+    "summary": "Biography of Mahmoud Darwish, Palestine's national poet, whose verse defined Palestinian identity and resistance across six decades.",
+    "verified": false,
+    "snippets": [
+      "Mahmoud Darwish (1941–2008) was born in the village of al-Birwa in the Galilee; the village was destroyed in 1948 and his family became internal refugees inside Israel, later crossing to Lebanon.",
+      "His poem 'Identity Card' (1964) — beginning 'Write down: I am an Arab' — was a defining text of Palestinian resistance literature, circulated widely in the Arab world and internationally.",
+      "Darwish served as editor of the Palestine Liberation Organization's literary journal and wrote the Palestinian Declaration of Independence, proclaimed by the Palestinian National Council in Algiers in 1988."
+    ]
+  },
+  {
+    "id": "wiki-ghassan-kanafani",
+    "title": "Ghassan Kanafani — Wikipedia",
+    "author": "Wikipedia contributors",
+    "year": 2025,
+    "type": "article",
+    "url": "https://en.wikipedia.org/wiki/Ghassan_Kanafani",
+    "tags": ["biography", "literature", "resistance", "PFLP", "assassination"],
+    "summary": "Biography of Ghassan Kanafani, Palestinian novelist and political leader, considered one of the most important Arab writers of the twentieth century.",
+    "verified": false,
+    "snippets": [
+      "Ghassan Kanafani (1936–1972) was born in Acre; expelled with his family in 1948, he spent his childhood in refugee camps in Syria and later worked as a teacher in Kuwait and journalist in Beirut.",
+      "As a spokesman for the Popular Front for the Liberation of Palestine (PFLP), Kanafani became one of the most internationally visible Palestinian political voices; he was assassinated in Beirut on July 8, 1972 by a car bomb attributed to Israeli intelligence.",
+      "His major works — including Men in the Sun (1963), All That's Left to You (1966), and Return to Haifa (1970) — use the Palestinian condition as both subject and structural metaphor."
+    ]
+  },
+  {
+    "id": "wiki-gaza-strip",
+    "title": "Gaza Strip — Wikipedia",
+    "author": "Wikipedia contributors",
+    "year": 2025,
+    "type": "article",
+    "url": "https://en.wikipedia.org/wiki/Gaza_Strip",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Gaza_Strip_in_Palestine.svg/330px-Gaza_Strip_in_Palestine.svg.png",
+    "tags": ["geography", "Gaza", "blockade", "occupation", "reference"],
+    "summary": "Overview of the Gaza Strip: geography, population, political history, blockade conditions, and the humanitarian situation.",
+    "verified": false,
+    "snippets": [
+      "The Gaza Strip is a 365 km² coastal enclave on the eastern Mediterranean, bordering Egypt to the south and Israel to the north and east; it is home to approximately 2.3 million Palestinians, making it one of the most densely populated territories in the world.",
+      "Israel imposed a land, sea, and air blockade on Gaza following Hamas's 2007 takeover, severely restricting the movement of people and goods; the UN has described conditions in Gaza under the blockade as an open-air prison.",
+      "Approximately 80% of Gaza's population consists of refugees or descendants of refugees expelled during the 1948 Nakba; the majority live in eight refugee camps administered by UNRWA.",
+      "قطاع غزة منطقة ساحلية تبلغ مساحتها 365 كيلومترًا مربعًا، يقطنها نحو 2.3 مليون فلسطيني، وتفرض عليها إسرائيل حصارًا برًّا وبحرًا وجوًّا منذ عام 2007 وصفه الأمم المتحدة بأنه سجن مفتوح.",
+      "نحو 80% من سكان غزة من اللاجئين وأحفادهم الذين هُجِّروا إبان نكبة 1948، ويقيم معظمهم في ثمانية مخيمات تابعة للأونروا."
+    ]
+  },
+  {
+    "id": "wiki-west-bank",
+    "title": "West Bank — Wikipedia",
+    "author": "Wikipedia contributors",
+    "year": 2025,
+    "type": "article",
+    "url": "https://en.wikipedia.org/wiki/West_Bank",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/West_Bank_in_Palestine_%28%2Bclaimed%29.svg/330px-West_Bank_in_Palestine_%28%2Bclaimed%29.svg.png",
+    "tags": ["geography", "occupation", "settlements", "reference", "West Bank"],
+    "summary": "Overview of the West Bank: geography, population, Israeli occupation, settlement expansion, and Palestinian governance.",
+    "verified": false,
+    "snippets": [
+      "The West Bank, a landlocked territory of 5,655 km² between the Jordan River and the 1949 armistice line (Green Line), has been under Israeli military occupation since the 1967 war.",
+      "Israel has divided the West Bank into Areas A (18%, under Palestinian Authority civil and security control), B (22%, joint civil control), and C (60%, under full Israeli military and civil control) — a framework established in the Oslo II Accord of 1995 that was intended to be temporary.",
+      "More than 700,000 Israeli settlers now live in over 250 settlements across the West Bank and East Jerusalem, in violation of international humanitarian law; settler violence against Palestinian farmers and villages has increased sharply since 2022.",
+      "الضفة الغربية منطقة تبلغ مساحتها 5655 كيلومترًا مربعًا، تخضع للاحتلال العسكري الإسرائيلي منذ حرب 1967، وتضمّ أكثر من 700,000 مستوطن إسرائيلي في مخالفة صريحة للقانون الدولي.",
+      "قسّمت إسرائيل الضفة الغربية إلى مناطق أ وب وج؛ وتقع 60% من الأراضي تحت السيطرة العسكرية والمدنية الإسرائيلية الكاملة، مما يُفتّت التواصل الجغرافي الفلسطيني ويجعل قيام دولة فلسطينية متواصلة أمرًا عسيرًا."
+    ]
+  },
+  {
+    "id": "wiki-israeli-settlements",
+    "title": "Israeli Settlements — Wikipedia",
+    "author": "Wikipedia contributors",
+    "year": 2025,
+    "type": "article",
+    "url": "https://en.wikipedia.org/wiki/Israeli_settlement",
+    "tags": ["settlements", "occupation", "international law", "West Bank", "land confiscation"],
+    "summary": "Overview of Israeli civilian communities built in occupied Palestinian territory, their legal status, growth, and impact on Palestinians.",
+    "verified": false,
+    "snippets": [
+      "Israeli settlements in the West Bank, including East Jerusalem, are considered illegal under international law, specifically Article 49 of the Fourth Geneva Convention, which prohibits an occupying power from transferring its civilian population into occupied territory.",
+      "The settler population in the West Bank has grown from roughly 110,000 in 1993 at the time of the Oslo Accords to over 700,000 in 2024, a more than sixfold increase during a period of peace negotiations.",
+      "Settlements are connected to Israel by a network of 'bypass roads' from which Palestinians are excluded, fragmenting the West Bank into non-contiguous enclaves and making a viable Palestinian state increasingly difficult to establish."
+    ]
+  },
+  {
+    "id": "wiki-oslo-accords",
+    "title": "Oslo Accords — Wikipedia",
+    "author": "Wikipedia contributors",
+    "year": 2025,
+    "type": "article",
+    "url": "https://en.wikipedia.org/wiki/Oslo_Accords",
+    "tags": ["Oslo", "peace process", "PLO", "Israel", "history", "politics"],
+    "summary": "Overview of the 1993 Oslo I and 1995 Oslo II Accords between Israel and the PLO — their terms, legacy, and widely-documented failures.",
+    "verified": false,
+    "snippets": [
+      "The Oslo I Accord (1993) established mutual recognition between Israel and the PLO and created the Palestinian Authority, but deferred core issues — Jerusalem, refugees, borders, settlements — to final-status negotiations that were never completed.",
+      "Critics including Edward Said argued at the time that Oslo was a Palestinian surrender, not a peace agreement: it secured Israeli recognition of the PLO while requiring Palestinians to renounce resistance without receiving a state, an end to occupation, or a settlement freeze.",
+      "In the three decades since Oslo, the settler population in the West Bank doubled, Israeli control over Palestinian movement intensified, and no final-status agreement was reached — leading many analysts to conclude that Oslo entrenched rather than ended the occupation."
+    ]
+  },
+  {
+    "id": "wiki-leila-khaled",
+    "title": "Leila Khaled — Wikipedia",
+    "author": "Wikipedia contributors",
+    "year": 2025,
+    "type": "article",
+    "url": "https://en.wikipedia.org/wiki/Leila_Khaled",
+    "tags": ["biography", "resistance", "PFLP", "women", "diaspora"],
+    "summary": "Biography of Leila Khaled, iconic Palestinian resistance figure and the first woman to participate in a hijacking, born in Haifa in 1944.",
+    "verified": false,
+    "snippets": [
+      "Leila Khaled was born in Haifa in 1944; her family fled to Lebanon during the 1948 Nakba when she was four years old, an experience that shaped her political commitment to Palestinian return.",
+      "In 1969, Khaled participated in the hijacking of TWA Flight 840, becoming the first woman to hijack an aircraft; she underwent plastic surgery to alter her appearance before a second operation in 1970.",
+      "Khaled has served as a member of the Palestinian National Council and remains an active political figure; her image — rifle in hand, keffiyeh wrapped around her head — became one of the most reproduced icons of Palestinian resistance."
+    ]
+  },
+  {
+    "id": "wiki-right-of-return",
+    "title": "Palestinian Right of Return — Wikipedia",
+    "author": "Wikipedia contributors",
+    "year": 2025,
+    "type": "article",
+    "url": "https://en.wikipedia.org/wiki/Palestinian_right_of_return",
+    "tags": ["refugees", "right of return", "international law", "UN Resolution 194", "diaspora"],
+    "summary": "Overview of the Palestinian right of return — its basis in UN Resolution 194, international law, and the ongoing political dispute.",
+    "verified": false,
+    "snippets": [
+      "UN General Assembly Resolution 194 (December 1948) resolves that 'refugees wishing to return to their homes and live at peace with their neighbours should be permitted to do so at the earliest practicable date' — a resolution reaffirmed annually and cited as the legal basis for Palestinian right of return.",
+      "Israel has consistently refused to recognize the right of return, citing demographic concerns; Palestinian negotiators and UN bodies maintain it is a right under international law that cannot be negotiated away.",
+      "Approximately 7.2 million Palestinian refugees and their descendants are registered with UNRWA, representing one of the largest and longest-standing refugee populations in the world."
+    ]
+  },
+  {
+    "id": "wiki-balfour-declaration",
+    "title": "Balfour Declaration — Wikipedia",
+    "author": "Wikipedia contributors",
+    "year": 2025,
+    "type": "article",
+    "url": "https://en.wikipedia.org/wiki/Balfour_Declaration",
+    "tags": ["history", "British Mandate", "1917", "Zionism", "founding documents"],
+    "summary": "Overview of the 1917 British letter that committed the government to facilitating a Jewish homeland in Palestine.",
+    "verified": false,
+    "snippets": [
+      "The Balfour Declaration, issued on November 2, 1917 as a letter from British Foreign Secretary Arthur James Balfour to Lord Walter Rothschild, stated that 'His Majesty's Government view with favour the establishment in Palestine of a national home for the Jewish people.'",
+      "The declaration notoriously qualified this commitment with the phrase 'it being clearly understood that nothing shall be done which may prejudice the civil and religious rights of existing non-Jewish communities in Palestine' — rights that Palestinians argue were violated from the outset.",
+      "At the time of the declaration, Jewish residents constituted approximately 6–8% of Palestine's population; critics argue that Britain had no authority to promise the land of one people to another without their consent."
+    ]
+  },
+  {
+    "id": "aljazeera-ar-nakba-series",
+    "title": "النكبة — الجزء الأول: خيوط المؤامرة | الجزيرة الوثائقية",
+    "author": "الجزيرة الوثائقية",
+    "year": 2014,
+    "type": "video",
+    "url": "https://www.youtube.com/watch?v=hxxP9NZsHEc",
+    "video": "https://www.youtube.com/watch?v=hxxP9NZsHEc",
+    "tags": ["نكبة", "1948", "وثائقي", "تاريخ", "فلسطين"],
+    "summary": "الجزء الأول من سلسلة وثائقية من أربعة أجزاء تنتجها الجزيرة الوثائقية، تتناول أحداث نكبة فلسطين عام 1948 من خلال أرشيفات عسكرية وشهادات ناجين.",
+    "verified": true,
+    "snippets": [
+      "النكبة الفلسطينية عام 1948 أسفرت عن تهجير أكثر من 750,000 فلسطيني وتدمير مئات القرى؛ وتكشف هذه الوثائقية كيف بدأت المؤامرة على فلسطين قبل عقود من إعلان قيام إسرائيل.",
+      "تستند الوثائقية إلى أرشيفات عسكرية إسرائيلية رُفعت عنها السرية، وشهادات ناجين فلسطينيين، ومقابلات مع مؤرخين من بينهم إيلان بابي وواليد الخالدي.",
+      "تتتبع الحلقة الأولى خيوط المؤامرة الصهيونية والبريطانية التي مهّدت لتهجير الفلسطينيين من أرضهم، منذ وعد بلفور عام 1917 حتى اندلاع الحرب عام 1948."
+    ]
+  },
+  {
+    "id": "alaraby-nakba-75",
+    "title": "النكبة الفلسطينية: 75 عامًا ولم يندمل الجرح | العربي الجديد",
+    "author": "العربي الجديد",
+    "year": 2023,
+    "type": "video",
+    "url": "https://www.youtube.com/watch?v=f4vGJRX2ego",
+    "video": "https://www.youtube.com/watch?v=f4vGJRX2ego",
+    "tags": ["نكبة", "1948", "لاجئون", "ذاكرة", "فلسطين"],
+    "summary": "تقرير وثائقي بمناسبة الذكرى الخامسة والسبعين للنكبة، يستعيد شهادات اللاجئين الفلسطينيين وأحفادهم ويرصد الجرح المفتوح منذ عام 1948.",
+    "verified": true,
+    "snippets": [
+      "في الذكرى الخامسة والسبعين للنكبة، لا يزال الجرح الفلسطيني مفتوحًا: أكثر من 7 ملايين لاجئ يحملون مفاتيح بيوتهم المهجورة وينتظرون تطبيق حق العودة المكفول بقرار الأمم المتحدة 194.",
+      "تُجسّد شهادات الناجين وأحفادهم المنتشرين في مخيمات لبنان والأردن وغزة والضفة استمرارية الذاكرة الفلسطينية وتمسّك الأجيال بحقها في العودة رغم مرور 75 عامًا على التهجير.",
+      "النكبة لم تنتهِ عام 1948؛ فمصادرة الأراضي وهدم المنازل وتوسيع المستوطنات في الضفة الغربية والقدس الشرقية يُشكّلان امتدادًا لنهج التهجير الممنهج المستمر حتى اليوم."
+    ]
+  },
+  {
+    "id": "aljazeera-ar-cuisine",
+    "title": "هذا الصباح — المطبخ الفلسطيني | الجزيرة",
+    "author": "قناة الجزيرة",
+    "year": 2022,
+    "type": "video",
+    "url": "https://www.youtube.com/watch?v=I4cTrvt5pEw",
+    "video": "https://www.youtube.com/watch?v=I4cTrvt5pEw",
+    "tags": ["ثقافة", "مطبخ", "تراث", "فلسطين", "هوية"],
+    "summary": "حلقة وثائقية تستعرض تنوع المطبخ الفلسطيني وارتباطه بالهوية والتراث والأرض، وتُسلّط الضوء على أشهر الأطباق الفلسطينية ودلالاتها الثقافية.",
+    "verified": true,
+    "snippets": [
+      "المطبخ الفلسطيني مرآة للهوية الوطنية؛ فالمسخن بدجاجه المحمّر وبصله المكرمل وسماقه يُجسّد ارتباط الفلسطيني بالأرض وموسم حصاد الزيتون.",
+      "تعكس أطباق كالمقلوبة والمنسف والكنافة النابلسية عمق الجذور الحضارية للشعب الفلسطيني وتنوع بيئاته الجغرافية من الجليل حتى النقب.",
+      "على الرغم من عقود الاحتلال والتهجير، حافظ الفلسطينيون في الداخل والشتات على وصفاتهم التقليدية ووثّقوها جيلًا بعد جيل، فكان المطبخ أداةً للذاكرة والمقاومة الثقافية."
+    ]
+  }
+]
