@@ -23,7 +23,6 @@ export type Contribution = ContributionInput & {
 let queue: Contribution[] = [];
 
 // ── Lightweight Google Sheets via REST + service-account JWT ─────────────────
-// Replaces the heavy `googleapis` package (~300 deps) with Node built-ins only.
 
 const SHEET_ID   = process.env.GOOGLE_SHEETS_ID;
 const SHEET_NAME = "Contributions";
@@ -39,11 +38,11 @@ async function getAccessToken(email: string, privateKey: string): Promise<string
 
   const header  = b64url(JSON.stringify({ alg: "RS256", typ: "JWT" }));
   const payload = b64url(JSON.stringify({
-    iss: email,
+    iss:   email,
     scope: "https://www.googleapis.com/auth/spreadsheets",
-    aud: "https://oauth2.googleapis.com/token",
-    exp: now + 3600,
-    iat: now,
+    aud:   "https://oauth2.googleapis.com/token",
+    exp:   now + 3600,
+    iat:   now,
   }));
 
   const toSign = `${header}.${payload}`;
@@ -65,25 +64,49 @@ async function getAccessToken(email: string, privateKey: string): Promise<string
   return data.access_token;
 }
 
+/** Ensures the named sheet tab exists, creating it if not. */
+async function ensureSheetTab(token: string): Promise<void> {
+  const meta = await fetch(
+    `https://sheets.googleapis.com/v4/spreadsheets/${SHEET_ID}`,
+    { headers: { Authorization: `Bearer ${token}` } }
+  );
+  const wb = await meta.json() as { sheets?: Array<{ properties: { title: string } }> };
+  const exists = (wb.sheets ?? []).some(s => s.properties.title === SHEET_NAME);
+
+  if (!exists) {
+    await fetch(
+      `https://sheets.googleapis.com/v4/spreadsheets/${SHEET_ID}:batchUpdate`,
+      {
+        method:  "POST",
+        headers: { Authorization: `Bearer ${token}`, "Content-Type": "application/json" },
+        body:    JSON.stringify({ requests: [{ addSheet: { properties: { title: SHEET_NAME } } }] }),
+      }
+    );
+  }
+}
+
 async function appendToSheet(contribution: Contribution): Promise<void> {
   if (!SHEET_ID) throw new Error("GOOGLE_SHEETS_ID is not set");
 
-  const email = process.env.GOOGLE_SERVICE_ACCOUNT_EMAIL;
+  const email  = process.env.GOOGLE_SERVICE_ACCOUNT_EMAIL;
   const rawKey = process.env.GOOGLE_SERVICE_ACCOUNT_PRIVATE_KEY;
   if (!email || !rawKey) throw new Error("Google service account credentials are not set");
 
   const privateKey = rawKey.replace(/\\n/g, "\n");
-  const token = await getAccessToken(email, privateKey);
+  const token      = await getAccessToken(email, privateKey);
+
+  // Create the "Contributions" tab if it doesn't exist yet
+  await ensureSheetTab(token);
 
   const range = encodeURIComponent(`${SHEET_NAME}!A:J`);
 
-  // Ensure header row on first run
-  const getMeta = await fetch(
-    `https://sheets.googleapis.com/v4/spreadsheets/${SHEET_ID}/values/${range}`,
+  // Write header row on first use
+  const checkRes = await fetch(
+    `https://sheets.googleapis.com/v4/spreadsheets/${SHEET_ID}/values/${encodeURIComponent(`${SHEET_NAME}!A1`)}`,
     { headers: { Authorization: `Bearer ${token}` } }
   );
-  const meta = await getMeta.json() as { values?: string[][] };
-  if (!meta.values || meta.values.length === 0) {
+  const checkData = await checkRes.json() as { values?: string[][] };
+  if (!checkData.values || checkData.values.length === 0) {
     await fetch(
       `https://sheets.googleapis.com/v4/spreadsheets/${SHEET_ID}/values/${range}?valueInputOption=RAW`,
       {

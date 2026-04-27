@@ -6,7 +6,7 @@ import { motion, useScroll, useTransform, useMotionValue, useSpring } from "fram
 import { useRef, useCallback } from "react";
 import { useI18n } from "@/i18n/provider";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, ArrowLeft, BookOpen } from "lucide-react";
+import { ArrowRight, ArrowLeft } from "lucide-react";
 
 export function Hero() {
   const { t, dir } = useI18n();
@@ -117,12 +117,6 @@ export function Hero() {
               <Button size="lg" className="group">
                 {t.landing.ctaStart}
                 <Arrow className="h-4 w-4 transition-transform group-hover:translate-x-1 rtl:group-hover:-translate-x-1" />
-              </Button>
-            </Link>
-            <Link href="/resources">
-              <Button size="lg" variant="outline">
-                <BookOpen className="h-4 w-4" />
-                {t.landing.ctaResources}
               </Button>
             </Link>
           </motion.div>
