@@ -84,7 +84,13 @@ async function* streamWithModel(
 
   try {
     const json = JSON.parse(body);
-    const text: string = json?.candidates?.[0]?.content?.parts?.[0]?.text ?? "";
+    // Gemini thinking models return parts tagged with `thought: true` — skip those.
+    const parts: Array<{ text?: string; thought?: boolean }> =
+      json?.candidates?.[0]?.content?.parts ?? [];
+    const text = parts
+      .filter((p) => !p.thought && typeof p.text === "string")
+      .map((p) => p.text)
+      .join("");
     if (text) yield text;
   } catch {
     throw new Error("Failed to parse Gemini response");
