@@ -10,3 +10,5 @@ dist
 .turbo
 contributions.xlsx
 .claude/
+
+.vercel
