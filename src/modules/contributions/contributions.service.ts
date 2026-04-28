@@ -1,5 +1,5 @@
 import { z } from "zod";
-import { google } from "googleapis";
+import crypto from "crypto";
 
 export const contributionSchema = z.object({
   title: z.string().min(2).max(200),
@@ -22,66 +22,109 @@ export type Contribution = ContributionInput & {
 // In-memory queue (reset per deploy — Google Sheets is the durable store).
 let queue: Contribution[] = [];
 
-// ── Google Sheets persistence ────────────────────────────────────────────────
+// ── Lightweight Google Sheets via REST + service-account JWT ─────────────────
 
-const SHEET_ID = process.env.GOOGLE_SHEETS_ID;
+const SHEET_ID   = process.env.GOOGLE_SHEETS_ID;
 const SHEET_NAME = "Contributions";
+const HEADERS    = ["ID","Title","Author","URL","Type","Tags","Summary","Submitted By","Status","Created At"];
 
-const HEADERS = [
-  "ID",
-  "Title",
-  "Author",
-  "URL",
-  "Type",
-  "Tags",
-  "Summary",
-  "Submitted By",
-  "Status",
-  "Created At",
-];
+function b64url(buf: Buffer | string): string {
+  const b = typeof buf === "string" ? Buffer.from(buf) : buf;
+  return b.toString("base64").replace(/=/g, "").replace(/\+/g, "-").replace(/\//g, "_");
+}
+
+async function getAccessToken(email: string, privateKey: string): Promise<string> {
+  const now = Math.floor(Date.now() / 1000);
+
+  const header  = b64url(JSON.stringify({ alg: "RS256", typ: "JWT" }));
+  const payload = b64url(JSON.stringify({
+    iss:   email,
+    scope: "https://www.googleapis.com/auth/spreadsheets",
+    aud:   "https://oauth2.googleapis.com/token",
+    exp:   now + 3600,
+    iat:   now,
+  }));
+
+  const toSign = `${header}.${payload}`;
+  const sign   = crypto.createSign("RSA-SHA256");
+  sign.update(toSign);
+  const jwt = `${toSign}.${b64url(sign.sign(privateKey))}`;
+
+  const res  = await fetch("https://oauth2.googleapis.com/token", {
+    method:  "POST",
+    headers: { "Content-Type": "application/x-www-form-urlencoded" },
+    body:    new URLSearchParams({
+      grant_type: "urn:ietf:params:oauth:grant-type:jwt-bearer",
+      assertion:  jwt,
+    }),
+  });
+
+  const data = await res.json() as { access_token?: string; error?: string };
+  if (!data.access_token) throw new Error(`Token exchange failed: ${data.error}`);
+  return data.access_token;
+}
+
+/** Ensures the named sheet tab exists, creating it if not. */
+async function ensureSheetTab(token: string): Promise<void> {
+  const meta = await fetch(
+    `https://sheets.googleapis.com/v4/spreadsheets/${SHEET_ID}`,
+    { headers: { Authorization: `Bearer ${token}` } }
+  );
+  const wb = await meta.json() as { sheets?: Array<{ properties: { title: string } }> };
+  const exists = (wb.sheets ?? []).some(s => s.properties.title === SHEET_NAME);
+
+  if (!exists) {
+    await fetch(
+      `https://sheets.googleapis.com/v4/spreadsheets/${SHEET_ID}:batchUpdate`,
+      {
+        method:  "POST",
+        headers: { Authorization: `Bearer ${token}`, "Content-Type": "application/json" },
+        body:    JSON.stringify({ requests: [{ addSheet: { properties: { title: SHEET_NAME } } }] }),
+      }
+    );
+  }
+}
 
 async function appendToSheet(contribution: Contribution): Promise<void> {
-  if (!SHEET_ID) throw new Error("GOOGLE_SHEETS_ID env var is not set");
+  if (!SHEET_ID) throw new Error("GOOGLE_SHEETS_ID is not set");
 
-  const email = process.env.GOOGLE_SERVICE_ACCOUNT_EMAIL;
+  const email  = process.env.GOOGLE_SERVICE_ACCOUNT_EMAIL;
   const rawKey = process.env.GOOGLE_SERVICE_ACCOUNT_PRIVATE_KEY;
   if (!email || !rawKey) throw new Error("Google service account credentials are not set");
 
-  // Support both escaped and literal newlines in the private key
   const privateKey = rawKey.replace(/\\n/g, "\n");
+  const token      = await getAccessToken(email, privateKey);
 
-  const auth = new google.auth.JWT({
-    email,
-    key: privateKey,
-    scopes: ["https://www.googleapis.com/auth/spreadsheets"],
-  });
+  // Create the "Contributions" tab if it doesn't exist yet
+  await ensureSheetTab(token);
 
-  const sheets = google.sheets({ version: "v4", auth });
+  const range = encodeURIComponent(`${SHEET_NAME}!A:J`);
 
-  // Ensure the header row exists
-  const meta = await sheets.spreadsheets.values.get({
-    spreadsheetId: SHEET_ID,
-    range: `${SHEET_NAME}!A1:J1`,
-  });
-
-  if (!meta.data.values || meta.data.values.length === 0) {
-    await sheets.spreadsheets.values.update({
-      spreadsheetId: SHEET_ID,
-      range: `${SHEET_NAME}!A1`,
-      valueInputOption: "RAW",
-      requestBody: { values: [HEADERS] },
-    });
+  // Write header row on first use
+  const checkRes = await fetch(
+    `https://sheets.googleapis.com/v4/spreadsheets/${SHEET_ID}/values/${encodeURIComponent(`${SHEET_NAME}!A1`)}`,
+    { headers: { Authorization: `Bearer ${token}` } }
+  );
+  const checkData = await checkRes.json() as { values?: string[][] };
+  if (!checkData.values || checkData.values.length === 0) {
+    await fetch(
+      `https://sheets.googleapis.com/v4/spreadsheets/${SHEET_ID}/values/${range}?valueInputOption=RAW`,
+      {
+        method:  "PUT",
+        headers: { Authorization: `Bearer ${token}`, "Content-Type": "application/json" },
+        body:    JSON.stringify({ values: [HEADERS] }),
+      }
+    );
   }
 
   // Append the new row
-  await sheets.spreadsheets.values.append({
-    spreadsheetId: SHEET_ID,
-    range: `${SHEET_NAME}!A:J`,
-    valueInputOption: "RAW",
-    insertDataOption: "INSERT_ROWS",
-    requestBody: {
-      values: [
-        [
+  const res = await fetch(
+    `https://sheets.googleapis.com/v4/spreadsheets/${SHEET_ID}/values/${range}:append?valueInputOption=RAW&insertDataOption=INSERT_ROWS`,
+    {
+      method:  "POST",
+      headers: { Authorization: `Bearer ${token}`, "Content-Type": "application/json" },
+      body:    JSON.stringify({
+        values: [[
           contribution.id,
           contribution.title,
           contribution.author,
@@ -92,10 +135,15 @@ async function appendToSheet(contribution: Contribution): Promise<void> {
           contribution.submittedBy ?? "",
           contribution.status,
           new Date(contribution.createdAt).toLocaleString("en-GB"),
-        ],
-      ],
-    },
-  });
+        ]],
+      }),
+    }
+  );
+
+  if (!res.ok) {
+    const body = await res.text();
+    throw new Error(`Sheets append failed ${res.status}: ${body}`);
+  }
 }
 
 // ── Service ──────────────────────────────────────────────────────────────────
@@ -108,8 +156,8 @@ export const contributionsService = {
   async submit(input: ContributionInput): Promise<Contribution> {
     const item: Contribution = {
       ...input,
-      id: `c_${Date.now()}_${Math.random().toString(36).slice(2, 8)}`,
-      status: "pending",
+      id:        `c_${Date.now()}_${Math.random().toString(36).slice(2, 8)}`,
+      status:    "pending",
       createdAt: Date.now(),
     };
     queue = [item, ...queue];
@@ -117,7 +165,6 @@ export const contributionsService = {
     try {
       await appendToSheet(item);
     } catch (err) {
-      // Non-fatal: log and continue so the API response still succeeds
       console.error("[contributions] Failed to write to Google Sheets:", err);
     }
 
